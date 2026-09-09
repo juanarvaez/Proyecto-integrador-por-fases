@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de productos | Versión 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="zona-marca">
+            <span class="logo">
+                <img src="images/carrito.png" alt="Logo de la frutería" width="50" height="50">
+            </span>
+            <div>
+                <h1>Frutería Web</h1>
+                <p class="subtitulo">Versión 2: carrito con cantidades</p>
+            </div>
+        </div>
+
+        <div class="zona-acciones">
+            <p class="contador-cabecera">
+                Artículos en el carrito: <span id="contador-carrito">0</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <!-- ---------- COLUMNA IZQUIERDA: CATÁLOGO ---------- -->
+        <section class="columna-catalogo">
+            <h2>Catálogo</h2>
+            <div id="lista-productos" class="grid-productos"></div>
+        </section>
+
+        <!-- ---------- COLUMNA DERECHA: CARRITO ---------- -->
+        <aside class="panel-carrito">
+            <h2>Tu carrito</h2>
+
+            <!-- Las líneas del carrito las genera JavaScript -->
+            <div id="items-carrito" class="lista-carrito"></div>
+
+            <div class="resumen">
+                <p class="linea-resumen">
+                    <span>Subtotal</span>
+                    <span id="texto-subtotal">$0.00</span>
+                </p>
+                <p class="linea-resumen">
+                    <span>Envío</span>
+                    <span id="texto-envio">$0.00</span>
+                </p>
+                <p class="linea-resumen linea-total">
+                    <span>Total a pagar</span>
+                    <span id="texto-total">$0.00</span>
+                </p>
+            </div>
+
+            <p id="mensaje-sistema" class="mensaje oculto"></p>
+        </aside>
+
+    </main>
+
+    <footer class="pie">
+        <p>Ejemplo académico. Todo el comportamiento está en <code>lib/script.js</code>.</p>
+    </footer>
+
+</body>
+</html>
