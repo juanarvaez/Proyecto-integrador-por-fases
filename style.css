@@ -29,6 +29,34 @@
 }
 
 
+/* -------------------------------------------------------------------------
+   2. REASIGNACIÓN LOCAL DE VARIABLES: EL TEMA OSCURO
+   JavaScript solo agrega la clase "tema-oscuro" al <body>. No cambia ni un
+   color a mano: al redefinir los tokens aquí, TODOS los elementos que usan
+   var() se repintan automáticamente.
+   ------------------------------------------------------------------------- */
+.tema-oscuro {
+    --color-primario: #4ade80;
+    --color-texto-boton: #052e16; /* sobre verde claro el texto debe ser oscuro */
+    --color-cabecera: #0b2f1f;
+    --color-texto: #e5e7eb;
+    --color-texto-suave: #9ca3af;
+    --color-fondo: #0f172a;
+    --color-superficie: #1e293b;
+    --color-borde: #334155;
+
+    --color-exito: #4ade80;
+    --fondo-exito: #14532d;
+    --color-error: #fca5a5;
+    --fondo-error: #4c1d1d;
+    --color-info: #93c5fd;
+    --fondo-info: #1e3a8a;
+
+    --sombra: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+
+
 
 /* =========================================================================
    NUEVO EN LA VERSIÓN 2: EL PANEL DEL CARRITO
@@ -303,7 +331,7 @@ p { margin: 0; }
 
 .boton-bloque {
     width: 100%;
-    margin-top: auto;
+    margin-top: 10px;
 }
 
 .boton:disabled {
@@ -338,9 +366,10 @@ p { margin: 0; }
 /* 8. PIE Y CLASES DE ESTADO ------------------------------------------------ */
 .pie {
     text-align: center;
-    color: var(--color-texto-suave);
+    color: #ffffff;
     font-size: calc(var(--espaciado-base) * 0.8);
     padding: var(--espaciado-base);
+    background-color:#9ca3af;
 }
 
 /* Clase de estado que JavaScript agrega y quita con classList */
