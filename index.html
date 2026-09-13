@@ -107,11 +107,13 @@
             <!-- Formulario de compra: al enviarlo evitamos la recarga con preventDefault() -->
             <form id="form-compra" class="form-compra">
                 <h3>Finalizar compra</h3>
-                <label for="input-nombre">Nombre completo</label>
-                <input type="text" id="input-nombre" placeholder="Nombre completo" required>
+                <label for="input-nombre" style="font-size: 15px; display: block; margin: 5px;">Nombre completo:
+                    <input type="text" id="input-nombre" placeholder="Nombre completo" required>
+                </label>
 
-                <label for="input-correo">Correo electrónico</label>
-                <input type="email" id="input-correo" placeholder="correo@ejemplo.com" required>
+                <label for="input-correo" style="font-size: 15px; display: block; margin: 5px;">Correo electrónico:
+                    <input type="email" id="input-correo" placeholder="correo@ejemplo.com" required>
+                </label>
                 <button type="submit" class="boton boton-bloque">Confirmar pedido</button>
             </form>
 
