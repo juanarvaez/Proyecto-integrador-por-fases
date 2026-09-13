@@ -594,7 +594,7 @@ function actualizarPantalla() {
 
 
     // 8.2. Cupones: función expresiva reutilizada por el clic y por Enter que permite aplicar un cupón de descuento o envío gratis.
-// Actualiza el resumen y muestra un mensaje según el resultado.
+    // Actualiza el resumen y muestra un mensaje según el resultado.
     const aplicarCupon = function () {
         const codigo = inputDescuento.value;
         const totales = calcularTotales();
@@ -720,6 +720,7 @@ function actualizarPantalla() {
     };
     formCompra.addEventListener("submit", manejarCompra);
 
+    
     // 8.8. Función declarativa que permite dibujar la boleta de compra en el panel derecho. Muestra el número de pedido,
     // el nombre y correo del cliente, los productos comprados, el ahorro por cupón (si lo hubo), el costo del envío y el
     // total pagado.

@@ -369,7 +369,7 @@ p { margin: 0; }
     color: #ffffff;
     font-size: calc(var(--espaciado-base) * 0.8);
     padding: var(--espaciado-base);
-    background-color:#9ca3af;
+    background-color:#6d6e6e;
 }
 
 /* Clase de estado que JavaScript agrega y quita con classList */
